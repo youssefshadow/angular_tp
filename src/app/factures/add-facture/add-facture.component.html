@@ -1,0 +1,57 @@
+<!-- src/app/factures/add-facture/add-facture.component.html -->
+<div class="container">
+  <h2>Ajouter une Facture</h2>
+  <form (ngSubmit)="addFacture()">
+    <div class="form-group">
+      <label for="numero">Numéro de Facture:</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numero"
+        [(ngModel)]="numero"
+        name="numero"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="montant">Montant:</label>
+      <input
+        type="number"
+        class="form-control"
+        id="montant"
+        [(ngModel)]="montant"
+        name="montant"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="nomClient">Nom du Client:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nomClient"
+        [(ngModel)]="nomClient"
+        name="nomClient"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="villeClient">Ville du Client:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="villeClient"
+        [(ngModel)]="villeClient"
+        name="villeClient"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Ajouter facture</button>
+  </form>
+</div>
+<hr />
+<app-list-facture></app-list-facture>

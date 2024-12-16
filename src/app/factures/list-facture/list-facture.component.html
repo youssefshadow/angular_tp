@@ -1,0 +1,30 @@
+<div class="card p-3">
+  <h2>Liste des Factures 🧾</h2>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Numéro</th>
+        <th>Montant</th>
+        <th>Nom du Client</th>
+        <th>Ville du Client</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let facture of factures">
+        <td>{{ facture.numero }}</td>
+        <td>{{ facture.montant | currency : "EU " }}</td>
+        <td>{{ facture.nomClient }}</td>
+        <td>{{ facture.villeClient }}</td>
+        <td>
+          <button
+            class="btn btn-danger btn-sm"
+            (click)="deleteFacture(facture.numero)"
+          >
+            Supprimer
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

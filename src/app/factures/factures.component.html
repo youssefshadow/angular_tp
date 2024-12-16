@@ -1,0 +1,33 @@
+<!-- src/app/factures/factures.component.html -->
+<div class="container mt-4">
+  <h2>Liste des Factures 🧾</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Numéro</th>
+        <th>Montant</th>
+        <th>Client</th>
+        <th>Ville</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let facture of factures">
+        <td>{{ facture.id }}</td>
+        <td>{{ facture.numero }}</td>
+        <td>{{ facture.montant | currency }}</td>
+        <td>{{ facture.nomClient }}</td>
+        <td>{{ facture.villeClient }}</td>
+        <td>
+          <button
+            class="btn btn-danger btn-sm"
+            (click)="deleteFacture(facture.numero)"
+          >
+            Supprimer
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
