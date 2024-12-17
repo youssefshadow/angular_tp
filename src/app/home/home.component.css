@@ -1,6 +1,7 @@
 h1.display-4 {
   font-weight: 600;
   font-size: 3rem;
+  color: #151269;
 }
 
 p.lead {
@@ -11,7 +12,7 @@ p.lead {
 .btn-primary {
   font-size: 1.1rem;
   padding: 12px 30px;
-  background-color: #007bff;
+  background-color: #151269;
   border: none;
   transition: background-color 0.3s, transform 0.3s ease-in-out;
 }
