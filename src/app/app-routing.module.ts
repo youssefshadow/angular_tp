@@ -7,7 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }, // Page d'accueil
+  { path: '', component: HomeComponent },
   { path: 'add-facture', component: AddFactureComponent },
   { path: 'factures', component: ListFactureComponent },
   { path: 'factures2', component: Factures2Component },

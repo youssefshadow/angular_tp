@@ -13,7 +13,7 @@ export class ContactComponent {
   };
 
   onSubmit() {
-    // Juste pour tester si le formulaire fonctionne
+    // Pour tester le fonctionement du formulaire dans la console
     console.log('Formulaire soumis', this.contact);
   }
 }

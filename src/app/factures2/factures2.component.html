@@ -3,7 +3,7 @@
 <div *ngFor="let facture of factures" class="mb-2">
   <p>
     <strong>Numéro:</strong> {{ facture.numero }}, <strong>Montant:</strong>
-    {{ facture.montant }}, <strong>Client:</strong> {{ facture.nomClient }},
-    <strong>Ville:</strong> {{ facture.villeClient }}
+    {{ facture.montant | currency : "EUR" }}, <strong>Client:</strong>
+    {{ facture.nomClient }}, <strong>Ville:</strong> {{ facture.villeClient }}
   </p>
 </div>

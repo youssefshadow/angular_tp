@@ -1,4 +1,3 @@
-// src/app/factures/add-facture/add-facture.component.ts
 import { Component } from '@angular/core';
 import { FactureService } from '../../services/facture.service';
 import { Facture } from '../../models/facture.model';
